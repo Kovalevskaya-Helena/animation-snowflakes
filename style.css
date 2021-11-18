@@ -1,0 +1,114 @@
+body{
+    background-color: blue;
+}
+
+.snowflake {
+    font-size: 40px;
+   
+}
+
+.snowflake-animation-position {
+    position: absolute;
+    left: 0%;
+
+}
+
+.snowflake-animation-position-2{
+    position: absolute;
+    left: 10%;
+    
+}
+.snowflake-animation-position-3{
+    position: absolute;
+    left: 20%;
+}
+
+.snowflake-animation-position-4{
+        position: absolute;
+        left: 30%;
+}
+
+.snowflake-animation-position-5{
+    position: absolute;
+    left: 40%;
+}
+
+.snowflake-animation-position-6{
+    position: absolute;
+    left: 50%;
+}
+
+.snowflake-animation-position-7{
+    position: absolute;
+    left: 60%;
+}
+
+.snowflake-animation-position-8{
+    position: absolute;
+    left: 70%;
+}
+
+.snowflake-animation-position-9{
+    position: absolute;
+    left: 80%;
+}
+
+.snowflake-animation-position-10{
+    position: absolute;
+    left: 90%;
+}
+.snowflake-animation-position-11{
+    position: absolute;
+    left: 93%;
+}
+
+
+.snowflake-animation {
+    animation-name: snowflake,fall;
+    animation-duration: 20s,10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear,ease-in-out;
+   
+   
+}
+
+.snowflake-animation:nth-of-type(even) { 
+    animation-delay: 4s; 
+}
+
+
+@keyframes snowflake {
+    0% {
+        top: -10%;
+    
+    }
+    
+    100% {
+        top: 90%;
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
